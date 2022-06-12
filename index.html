@@ -1,79 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="..\css\style.css"/>
-    <link rel="icon" type="image/x-icon" href="favicon.ico" style="border-radius:    30px"/>
-    <title>Zomato</title>
 
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="..\css\style.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" style="border-radius: 30px" />
+    <title>Zomato</title>
 </head>
+
 <body>
     <header id="header-background">
-
         <!-- -------------------CODING FOR NAVIGATION BAR------------------------------------ -->
-        <section class="container" >
+        <section class="container1">
             <!-- <img class="logo" src="../img/logo.png" style="width:60px;height: 60px; border-radius: 30px;"/> -->
-        
-        <ul class="menu">
-            <div class="leftMenu">
-            <li class="app"><a href="#gettheapp">Get the app</a></li>
-            </div>
-            <div class="rightMenu">
-            <li class="a"><a href="investor-relations.html">Investor Relations</a></li>
-            <li class="a"><a href="add-restaurant.html">Add Restaurant</a></li>
-            <li class="a"><a href="login.html">Login</a></li>
-            <li class="a"><a href="signup.html">Sign Up</a></li>
-        </div>
-        </ul>
-    </section>
-    <!-- --------------------Zomato White logo with search fields--------------------------------- -->
+
+            <ul class="menu">
+                <div class="leftMenu ">
+                    <li class="menuApp"><i class="downloadApp" style="size:10px;">
+                            <img style="fill:white; size:10px;" src="img/mobile-in-hand.svg" title="download-app" />
+
+                        </i><a href="#gettheapp">Get the app</a></li>
+                </div>
+                <div class="rightMenu ">
+                    <li class="menuItem">
+                        <a href="investor-relations.html">Investor Relations</a>
+                    </li>
+                    <li class="menuItem ">
+                        <a href="add-restaurant.html">Add Restaurant</a>
+                    </li>
+                    <li class="menuItem"><a href="login.html">Login</a></li>
+                    <li class="menuItem"><a href="signup.html">Sign Up</a></li>
+                </div>
+            </ul>
+        </section>
+        <!-- --------------------Zomato White logo with search fields--------------------------------- -->
         <div class="contentsWrapper">
             <div class="logo">
-            <span id="imagetitle"> <img src="img/zomato.avif" style="height:3rem; width:19rem;"></span>
-            <span id="subtitle"><h1 style="color: white; ">Discover the best cuisines in Jaipur</h1></span>
+                <span id="imagetitle">
+                    <img src="img/zomato.avif" style="height: 3rem; width: 19rem" /></span>
+                <span id="subtitle">
+                    <h1 style="color: white">
+                        Discover the best cuisines in Jaipur
+                    </h1>
+                </span>
             </div>
             <div class="searchContainer">
-               
-                <div class="cityDropdown"><input class="form-control" placeholder="Jaipur"/></div>
-                
-                <div class="searchBox"><input class="form-control" placeholder="Search for a restaurant,cuisine or a dish" value=""></div>
+                <div class="cityDropdown verticalLine">
+                    <i class="iconClass">
+                        <img src="img/locationIcon.png" />
+                    </i>
+                    <input class="form-control" placeholder="Jaipur" />
+                </div>
+
+                <div class="searchBox">
+                    <i class="iconClass">
+                        <img src="img/searchIcon.png" />
+                    </i>
+                    <input class="form-control" placeholder="Search for a restaurant,cuisine or a dish" value="" />
+                </div>
             </div>
         </div>
     </header>
     <main>
-<div id="main">
-    <div class="orderWays">
-        <div class="imageMain"><img class="image1" src="../img/orderonline.avif"/></div>
-        <div class="orderText">
-            <p class="heading">Order Online</p>
-        <p class="subText">Stay home and order at your doorstep</p></div>
-    </div>
+        <div id="main">
 
-    
-    <div class="orderWays">
-        <div class="imageMain"><img class="image1" src="../img/diningout.avif"/></div>
-        <div class="orderText">
-            <p class="heading">Dining Out</p> 
-          
-             <p class="subText">View the city's favourite dining venues</p>
-        </div>
-    </div>
-    
-    <div class="orderWays">
-        <div class="imageMain"><img class="image1" src="../img/nightlife.avif"/></div>
-       <div class="orderText">
-        <p class="heading">Nightlife and clubs</p>
-            <p class="subText">Explore the city's top nightlife outlets</p>
-        </div>
-    </div>
-</div>
+            <div class="orderWays">
+                <div class="imageMain">
+                    <img class="image" src="../img/orderonline.avif" />
+                </div>
+                <div class="orderText">
+                    <p class="heading">Order Online</p>
+                    <p class="subText">Stay home and order at your doorstep</p>
+                </div>
+            </div>
 
+            <div class="orderWays">
+                <div class="imageMain">
+                    <img class="image" src="../img/diningout.avif" />
+                </div>
+                <div class="orderText">
+                    <p class="heading">Dining Out</p>
+
+                    <p class="subText">View the city's favourite dining venues</p>
+                </div>
+            </div>
+
+            <div class="orderWays">
+                <div class="imageMain">
+                    <img class="image" src="../img/nightlife.avif" />
+                </div>
+                <div class="orderText">
+                    <p class="heading">Nightlife and clubs</p>
+                    <p class="subText">Explore the city's top nightlife outlets</p>
+                </div>
+            </div>
+        </div>
+        <div class="collectionsBox">
+            <div class="heading1">
+                <H1 class="h1Class">Collections</H1>
+            </div>
+            <div class="heading1">Explore curated lists of top restaurants, cafes, pubs, and bars in Jaipur, based on
+                trends</div>
+
+            <div class="imageCollectionBox">
+                <div class="collectionClass">
+                    <div class="collectionBoxWays">
+                        <div class="imageMain1">
+                            <img class="image1 darkenedImage" src="img/Hawa-bestOfJaipur.jpg" />
+                        </div>
+                        <div class="collectionText">
+                            <p class="heading">Best Of Jaipur</p>
+                            <p class="subText1">34 Places</p>
+                        </div>
+                    </div>
+
+
+                    <div class="collectionBoxWays">
+                        <div class="imageMain1">
+                            <img class="image1 darkenedImage" src="img/trendingFood1.jpg" />
+                        </div>
+                        <div class="collectionText">
+                            <p class="heading">Trending This Week</p>
+                            <p class="subText1">30 Places</p>
+                        </div>
+                    </div>
+ 
+
+                    <div class="collectionBoxWays">
+                        <div class="imageMain1 ">
+                            <img class="image1 darkenedImage" src="img/instaWorthy.jpg" />
+                        </div>
+                        <div class="collectionText">
+                            <p class="heading">Insta-Worthy</p>
+                            <p class="subText1">40 Places</p>
+                        </div>
+                    </div>
+
+
+                    <div class="collectionBoxWays">
+                        <div class="imageMain1">
+                            <img class="image1 darkenedImage" src="img/beerinbar.avif" />
+                        </div>
+                        <div class="collectionText">
+                            <p class="heading">Beer In A Bar</p>
+                            <p class="subText1">25 Places</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
+        <div class="footerClass">
+            <div class="rowPrimary">
+                <div class="colPrimary">
+                    <div class="colDisplay">
+                        <ul>
+                            <li class="footerList">
+                                <H1 class="h1Class">About Zomato</H1>
+                            </li>
+                            <li class="footerList"> <a href="#" class="aboutTitles">Who we are</a></li>
+                            <li class="footerList"> <a href="#" class="aboutTitles">Blog</a></li>
+                            <li class="footerList"> <a href="#" class="aboutTitles">Work with us</a></li>
+                            <li class="footerList"> <a href="#" class="aboutTitles">Investor Relations</a></li>
+                            <li class="footerList"> <a href="#" class="aboutTitles">Report Fraud</a></li>
+                        </ul>
+                    </div>
 
+                    <div class="colDisplay">
+                        <ul>
+                            <li class="footerList">
+                                <H1 class="h1Class">Zomaverse</H1>
+                            </li>
+                            <li class="footerList"> <a href="#" class="aboutTitles">Zomato</a></li>
+                            <li class="footerList"> <a href="#" class="aboutTitles">Feeding India</a></li>
+                            <li class="footerList"> <a href="#" class="aboutTitles">Hyperpure</a></li>
+                            <li class="footerList"> <a href="#" class="aboutTitles">Zomaland</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="colDisplay">
+                        <ul>
+                            <li class="footerList">
+                                <H1 class="h1Class">For Restaurants</H1>
+                            </li>
+                            <li class="footerList"> <a href="#" class="aboutTitles">Partner With Us</a></li>
+                            <li class="footerList"> <a href="#" class="aboutTitles">App For You</a></li>
+                            <li class="footerList"> <a href="#" class="aboutTitles">Work with us</a></li>
+                            <li class="footerList">
+                                <H1 class="h1Class">For Enterprises</H1>
+                            </li>
+                            <li class="footerList"> <a href="#" class="aboutTitles">Zomato For Work</a></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="colDisplay">
+                        <ul>
+                            <li class="footerList">
+                                <H1 class="h1Class">Learn More</H1>
+                            </li>
+                            <li class="footerList"> <a href="#" class="aboutTitles">Privacy</a></li>
+                            <li class="footerList"><a href="#" class="aboutTitles">Security</a></li>
+                            <li class="footerList"> <a href="#" class="aboutTitles">Terms</a></li>
+                            <li class="footerList"> <a href="#" class="aboutTitles">Sitemap</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="colDisplay">
+                        <ul>
+                            <li class="footerList">
+                                <H1 class="h1Class">Social Links</H1>
+                            </li>
+                            <li class="footerList"> <a href="https://in.linkedin.com/company/zomato" class="aboutTitles"><img src="img/icons/linkedin.png">Linkedin</a></li>
+                            <li class="footerList"> <a href="https://www.youtube.com/channel/UCD7kbZQyYIR6RgJQYW9w0Tg" class="aboutTitles"><img src="img/icons/youtube.png">Youtube</a></li>
+                            <li class="footerList"> <a href="https://www.instagram.com/zomato/?hl=en" class="aboutTitles"><img src="img/icons/Instagram.png">Instagram</a></li>
+                            <li class="footerList"> <a href="https://www.facebook.com/zomato/" class="aboutTitles"><img src="img/icons/facebook.png">Facebook</a></li>
+                            <li class="footerList"> <a href="https://twitter.com/zomato" class="aboutTitles"><img src="img/icons/twitter.png">Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+ <div class="horizontalLine">
+    <hr/>
+ </div>        
+<div class="termsTitle">
+    <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. 
+        All trademarks are properties of their respective owners. 2008-2022 © Zomato™ Ltd. All rights reserved.</p>
+</div>
+        </div>
     </footer>
 </body>
+
 </html>

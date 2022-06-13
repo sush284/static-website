@@ -4,6 +4,7 @@
 }
 body {
   margin: 0px;
+  background-color:lightyellow;
 }
 #header-background {
   position: relative;
@@ -51,6 +52,10 @@ li a {
   text-decoration: none;
 }
 
+.newLi
+{
+    color:black;
+}
 .container1 {
   background-image: url("../img/background2.jpg");
   height: 55vh;
@@ -167,7 +172,7 @@ h1 {
 .image1 {
   width: 235px;
   height: 235px;
-  border-radius:10px;
+  border-radius: 10px;
 }
 
 .orderWays:hover {
@@ -197,7 +202,7 @@ h1 {
   display: block;
   justify-content: center;
   margin-left: 209px;
-  margin-top: 32px;
+  margin-top: 12px;
 }
 .subText {
   color: rgb(79, 79, 79);
@@ -226,105 +231,93 @@ h1 {
   border: 2px solid lightgrey;
 }
 
-.collectionBoxWays :hover
-{
-    cursor: pointer;
+.collectionBoxWays :hover {
+  cursor: pointer;
 }
 .collectionText {
-  color: white ;
+  color: white;
   padding-left: 10px;
   position: absolute;
-font-weight: bolder;
-font-size:10px;
+  font-weight: bolder;
+  font-size: 10px;
   /* margin-top: -11px; */
 }
-li.footerList >  h1{
-    margin-bottom:10px;
-    font-size: 17px;
+li.footerList > h1 {
+  margin-bottom: 10px;
+  font-size: 17px;
 }
 
-li.footerList > a
-{
-    float:left;
-    /* margin-top:10px; */
-    list-style: none;
-    margin-bottom: 5px;;
-    color: grey;
-    font-size: 15px;;
+li.footerList > a {
+  float: left;
+  /* margin-top:10px; */
+  list-style: none;
+  margin-bottom: 5px;
+  color: grey;
+  font-size: 15px;
 }
 
-li.footerList > a:hover
-{
-color: black;
+li.footerList > a:hover {
+  color: black;
 }
-.footerClass
-{
-    margin-top: 20px;;
+.footerClass {
+  margin-top: 20px;
+  position:absolute;
 }
-.termsTitle
-{
-display: flex;
-justify-content: center;
-text-align: left;
+.termsTitle {
+  display: flex;
+  justify-content: center;
+  text-align: left;
 }
-.termsTitle > p
-{
-color: grey;
-display: flex;
-width: 75%;
-text-align: left;
-font-size: 13px;
-justify-content: center;
+.termsTitle > p {
+  color: grey;
+  display: flex;
+  width: 75%;
+  text-align: left;
+  font-size: 13px;
+  justify-content: center;
 }
-.horizontalLine > hr
-{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+.horizontalLine > hr {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
-.horizontalLine > hr
-{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+.horizontalLine > hr {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
-.rowPrimary
-{
-    display: flex;
-justify-content: center;
-height: 60vh;
-width :100%;
+.rowPrimary {
+  display: flex;
+  justify-content: center;
+  height: 60vh;
+  width: 100%;
 }
-.colPrimary
-{
-    /* column-width: 200px; */
-    column-count: 5;
-    display: flex;
-    justify-content: center;
-    width: 70%;
-    column-gap: 0px;
+.colPrimary {
+  /* column-width: 200px; */
+  column-count: 5;
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  column-gap: 0px;
 }
-.colDisplay{
-    display: flex;
-    height:55vh;
-    width:80%;
-
+.colDisplay {
+  display: flex;
+  height: 55vh;
+  width: 80%;
 }
-.subText1{
-    color: white ;
-    /* padding-left: 10px; */
-    font-weight: normal;
-    font-size: 13px;
-    margin: 3%;
-  }  
-  .h1Class
-  {
-   color: black;
-    font-weight: bold; 
-    text-align: left;
-  }
-.darkenedImage
-{
-    filter: brightness(50%);
+.subText1 {
+  color: white;
+  /* padding-left: 10px; */
+  font-weight: normal;
+  font-size: 13px;
+  margin: 3%;
+}
+.h1Class {
+  color: black;
+  font-weight: bold;
+  text-align: left;
+}
+.darkenedImage {
+  filter: brightness(50%);
 }

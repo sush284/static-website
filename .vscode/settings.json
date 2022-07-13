@@ -1,0 +1,5 @@
+{
+    "liveServer.settings.CustomBrowser": "chrome:PrivateMode",
+    "liveServer.settings.port": 5000,
+    "livePreview.defaultPreviewPath": "/index.html",
+}

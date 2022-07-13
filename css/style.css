@@ -1,10 +1,23 @@
+/* for mobile */
+@media (min-width: 0px) and (max-width: 758px) {
+  #header {
+    display: block;
+  }
+}
+
+/* -----------------------------1st Page css ---------------------------- */
+
 * {
   font-family: Okra, Helvetica, sans-serif;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: honeydew;; */
 }
 body {
   margin: 0px;
-  background-color:lightyellow;
+  background-color: honeydew;
+  font-family: Okra, Helvetica, sans-serif;
 }
 #header-background {
   position: relative;
@@ -20,18 +33,10 @@ body {
   width: 20px;
   height: 20px;
 }
-ul li {
-  display: flex;
-  /* padding-left:20%; */
-  text-decoration: none;
-  background-color: none;
-  color: black;
-  list-style: none;
-  display: grid;
-}
+
 .menuItem {
   color: white;
-  padding: 16px 13px;
+  padding: 0px 0px 0px 70px;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -45,49 +50,75 @@ ul li {
   opacity: 60%;
 }
 
-li a {
+.right--menu {
   display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 100%;
+  -moz-box-pack: end;
+}
+.right--menu > li {
+  display: inline-block;
+}
+.btnLogin,
+.btnSignup {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1rem;
+}
+li a {
   color: white;
   font-size: 1rem;
   text-decoration: none;
 }
-
-.newLi
-{
-    color:black;
-}
-.container1 {
+.container--menu {
   background-image: url("../img/background2.jpg");
-  height: 55vh;
+  height: 60vh;
   background-repeat: no-repeat;
-  width: 1350px;
+  width: 100%;
   opacity: 100%;
-  display: flex;
-  margin: auto;
 }
-.leftMenu {
+nav {
   display: flex;
-  padding-left: 150px;
-  float: left;
-  /* padding-top:50px; */
-  margin: auto;
+  width: 80%;
+  justify-content: space-around;
 }
-.rightMenu {
-  display: flex;
-  margin: auto;
-  float: right;
-  padding-left: 400px;
+.nav--left {
+  margin-left: 1rem;
+  margin-top: 1em;
+  display: block;
+}
+.nav--right {
+  margin-right: -14rem;
+  margin-top: 1em;
 }
 
-.contentsWrapper {
+.container--sub--collection {
+  display: inline;
+  position: relative;
+  place-content: center;
+  margin: 16px auto;
+  /* text-align: center; */
+  /* left: 10vw; */
+  /* transform: translateX(-50%); */
+}
+.container--wrapper {
   position: absolute;
-  bottom: calc(50% - 6.1rem);
+  bottom: calc(50% - 10.1rem);
   display: flex;
+  height: 40vh;
   flex-direction: column;
   -moz-box-pack: center;
   justify-content: center;
   -moz-box-align: center;
+  width: 100%;
+  display: flex;
+  height: 40vh;
+  justify-content: center;
   align-items: center;
+  overflow: hidden;
   width: 100%;
 }
 
@@ -96,11 +127,12 @@ li a {
   margin-bottom: 15px;
   justify-content: center;
 }
-.searchContainer {
+.container--search {
   display: flex;
   border-radius: 0.6rem;
   box-shadow: rgba(28, 28, 28, 0.08) 0px 2px 8px;
   height: 3rem;
+  width: 60%;
   align-items: center;
   -moz-box-align: center;
   background: rgb(255, 255, 255) none repeat scroll 0% 0%;
@@ -133,7 +165,7 @@ h1 {
   color: white;
   text-align: center;
   font-size: 1.4rem;
-  font-weight: lighter;
+  font-weight: normal;
   margin-bottom: 15px;
 }
 
@@ -141,14 +173,16 @@ h1 {
   display: flex;
   content: "\a";
   white-space: reserve;
-  font-family: Arial, Helvetica, sans-serif;
+
   /* background-image: url("../img/zomato.avif"); */
 }
 
-#main {
+#container--order--ways {
   display: flex;
   margin: 40px 65px 0px 65px;
   justify-content: center;
+  width: 90%;
+  flex-wrap: wrap;
 }
 
 .imageMain {
@@ -164,29 +198,28 @@ h1 {
 
 .imageMain1 {
   width: 100%;
-  height: 80%;
+  height: 100%;
   border-radius: 10px;
   position: relative;
 }
 
 .image1 {
-  width: 235px;
-  height: 235px;
+  width: 16em;
+  height: 16em;
   border-radius: 10px;
 }
 
 .orderWays:hover {
-  width: 290px;
-  height: 260px;
+  transform: scale(1.1);
   cursor: pointer;
 }
 
 .orderWays {
-  width: 280px;
+  width: 27%;
   height: 250px;
   margin: 20px;
   border-radius: 10px;
-  border: 2px solid lightgrey;
+  border: 0.5px solid lightgrey;
 }
 .orderText {
   font-family: Arial, Helvetica, sans-serif;
@@ -196,13 +229,13 @@ h1 {
 .heading {
   font-weight: 200;
   font-size: medium;
-  margin: 0%;
+  position: relative;
+  bottom: 0em;
+  left: 0.1em;
 }
-.heading1 {
-  display: block;
-  justify-content: center;
-  margin-left: 209px;
-  margin-top: 12px;
+.heading--collection > div {
+  margin-left: 7em;
+  margin-top: 3em;
 }
 .subText {
   color: rgb(79, 79, 79);
@@ -216,40 +249,66 @@ h1 {
   outline: none;
   width: 80%;
 }
-
-.collectionClass {
+/* 
+div.collectionBoxWays
+{
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  align-items: center;
+} */
+
+.collectionClass {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-gap: 2.5%;
+  grid-auto-rows: minmax(150px, auto);
+  grid-auto-columns: minmax(150px, auto);
+  margin: 10px auto;
+  margin-top: 10px;
+  margin-right: 6em;
+  margin-bottom: 10px;
+  margin-left: 6em;
+}
+
+.imageCollectionBox {
+  height: 80vh;
 }
 
 .collectionBoxWays {
-  width: 230px;
-  height: 35vh;
-  margin: 4px;
+  width: 16em;
+  height: 16em;
+  margin: 0.1%;
   border-radius: 10px;
-  border: 2px solid lightgrey;
+  border: 0.5px solid lightgrey;
 }
 
 .collectionBoxWays :hover {
   cursor: pointer;
 }
-.collectionText {
+.text--collection {
   color: white;
-  padding-left: 10px;
-  position: absolute;
+  position: relative;
   font-weight: bolder;
   font-size: 10px;
-  /* margin-top: -11px; */
+  text-align: center;
+  top: -20px;
+}
+
+.text--collection > p {
+  font-weight: 200;
+  font-size: medium;
+  position: relative;
+  bottom: 2em;
 }
 li.footerList > h1 {
   margin-bottom: 10px;
-  font-size: 17px;
+  font-size: 16px;
+  width:8em;
 }
 
 li.footerList > a {
   float: left;
-  /* margin-top:10px; */
+  width:9em;
   list-style: none;
   margin-bottom: 5px;
   color: grey;
@@ -259,9 +318,10 @@ li.footerList > a {
 li.footerList > a:hover {
   color: black;
 }
-.footerClass {
+.container-footer {
   margin-top: 20px;
-  position:absolute;
+  position: relative;
+  width: 100%;
 }
 .termsTitle {
   display: flex;
@@ -290,34 +350,186 @@ li.footerList > a:hover {
 .rowPrimary {
   display: flex;
   justify-content: center;
-  height: 60vh;
+  height: 30vh;
   width: 100%;
 }
 .colPrimary {
-  /* column-width: 200px; */
-  column-count: 5;
-  display: flex;
+  display: grid;
   justify-content: center;
-  width: 70%;
-  column-gap: 0px;
+  width: 90%;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  margin: 0 auto;
 }
 .colDisplay {
-  display: flex;
   height: 55vh;
-  width: 80%;
+  width: 54%;
 }
-.subText1 {
+P.subText1 {
   color: white;
   /* padding-left: 10px; */
   font-weight: normal;
   font-size: 13px;
-  margin: 3%;
 }
-.h1Class {
-  color: black;
-  font-weight: bold;
+.heading--collection > h1 {
   text-align: left;
+  margin-left: 5em;
+  color: black;
 }
 .darkenedImage {
-  filter: brightness(50%);
+  filter: brightness(40%);
+}
+ul li {
+  list-style-type: none;
+}
+
+.container--popularlocalities {
+  margin-top: 5em;
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+.card--locality--details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 3% 0 3% 0;
+  width: 100%;
+}
+
+
+.container--collection {
+  margin-bottom: 0%;
+  width: 100%;
+  display: block;
+  height: 55vh;
+}
+.textPrimary {
+  display: contents;
+  margin-top: 10%;
+}
+
+.textPrimary p {
+  font-size: 1.8rem;
+  display: flex;
+  margin-top: -3%;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+}
+
+.localityBox {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+}
+.cityListBox {
+  padding: 0.5rem 0.5rem;
+  justify-content: space-between;
+  border: 0.5px solid lightgray;
+  border-radius: 10px;
+  width: 26%;
+  overflow: none;
+  height: 4.2em;
+  display: flex;
+  margin: 2px 15px 2px 15px;
+  position: relative;
+}
+.cityListBox:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 6px -6px black;
+}
+.secondaryBox {
+  overflow: hidden;
+}
+.container--app {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  column-count: 2;
+  height: 78vh;
+}
+.app--col1 {
+  width: 50%;
+}
+
+.app--col2 {
+  width: 50%;
+}
+.app--image {
+  display: flex;
+  justify-content: center;
+  float: left;
+}
+.app--image img {
+  width: 50%;
+}
+.get--zomato--app {
+  /* width:100px; */
+  height: 80vh;
+  display: flex;
+}
+.app--col1 {
+  width: 50%;
+}
+.app--col2 {
+  width: 50%;
+}
+/* -------------------------------------------Arrows CSS---------------------------------- */
+i.arrow--right {
+  border: solid black;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  width: 1%;
+  margin-left: 2rem;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/* i.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+i.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+i.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+} */
+/* ------------------------------------Investor Relations page CSS ------------------------------------------ */
+.menu1 {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  margin-left: 0%;
+  background-color: black;
+  height: 17vh;
+}
+.menuItem1 {
+  margin-right: 20px;
+}
+
+.rightMenu1 {
+  display: flex;
+  margin: auto;
+  float: right;
+}
+
+.newLi {
+  color: white;
+  font-family: Helvetica, sans-serif, Verdana, Tahoma, sans-serif;
 }
